@@ -1,0 +1,29 @@
+{
+  "name": "hrr36-miniapps_challenge2",
+  "version": "1.0.0",
+  "description": "Coindesk Bitcoin Tracking App",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js -d -w",
+    "start": "nodemon src/index.js"
+  },
+  "author": "AC Roselee",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "chart.js": "^2.8.0",
+    "express": "^4.16.4",
+    "react": "^16.8.4",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.8.4"
+  }
+}
