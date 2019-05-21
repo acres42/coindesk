@@ -13,8 +13,8 @@ const Chart = props => {
     datasets: [
       {
         label: "Bitcoin (BTC)",
-        backgroundColor: "rgb(255, 99, 132)",
-        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgb(55, 99, 132)",
+        borderColor: "rgb(55, 99, 132)",
         data: prices
       }
     ]

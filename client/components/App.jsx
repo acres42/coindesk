@@ -53,22 +53,21 @@ class App extends React.Component {
   }
 
   render() {
-    return ( <
-      div >
-      <
-      div > Cryptocurrency Charting Tool < /div> <
-      Dates handleChange = {
+    return (
+    <div>
+      <div> Cryptocurrency Charting Tool </div>
+      <Dates handleChange = {
         this.handleChange
       }
       handleSubmit = {
         this.handleSubmit
       }
-      /> <
-      Chart data = {
+      />
+      <Chart data = {
         this.state.data
       }
-      /> < /
-      div >
+      />
+    </div >
     );
   }
 }
