@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       start: "2013-09-01",
-      end: "2017-09-01",
+      end: new Date().toISOString().slice(0,10),
       data: {}
     };
     this.handleChange = this.handleChange.bind(this);
@@ -16,6 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log(this.state.end);
     axios
       .get(
         `https://api.coindesk.com/v1/bpi/historical/close.json?start=${
@@ -56,14 +57,16 @@ class App extends React.Component {
     return (
     <div>
       <div> Cryptocurrency Charting Tool </div>
-      <Dates handleChange = {
-        this.handleChange
-      }
-      handleSubmit = {
-        this.handleSubmit
-      }
+      <Dates
+        handleChange = {
+          this.handleChange
+        }
+        handleSubmit = {
+          this.handleSubmit
+        }
       />
-      <Chart data = {
+      <Chart
+      data = {
         this.state.data
       }
       />
